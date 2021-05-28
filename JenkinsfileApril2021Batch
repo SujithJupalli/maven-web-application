@@ -28,7 +28,7 @@ node(wallmart-node)
   stage('DeployAppintoTomcatServer')
  {
  sshagent(['017ba0e8-c08f-46e9-94aa-834371229478']) {
- sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@52.64.130.198:/opt/apache-tomcat-9.0.45/webapps/"
+ sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@15.207.109.46:/opt/apache-tomcat-9.0.45/webapps/"
  }
  }
 */
